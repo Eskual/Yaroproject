@@ -1,2 +1,3 @@
 # ignore ALL files in directory 
 node_modules/
+cypress/e2e/credentials.json
