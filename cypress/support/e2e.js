@@ -16,7 +16,10 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 Cypress.on('uncaught:exception', (err, runnable) => {
-    if (err.message.includes('FS is not defined')) {
+    if (err.message.includes('FS is not defined'))
         return false;
-    }
+})
+Cypress.on('uncaught:exception', (err, runnable) => {
+    if (err.message.includes('postMessage'))
+        return false;
 })

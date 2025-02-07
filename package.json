@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^14.0.0"
+    "cypress": "^14.0.0",
+    "cypress-iframe": "^1.0.1"
   },
   "dependencies": {
     "fs": "^0.0.1-security"

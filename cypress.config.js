@@ -3,8 +3,9 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
-  viewportWidth: 1280,
-  viewportHeight: 720,
+  viewportWidth: 2400,
+  viewportHeight: 1200,
+  watchForFileChanges: false,
   e2e: {
     baseUrl: "https://admin.convoso.com/",
     setupNodeEvents(on, config) {
