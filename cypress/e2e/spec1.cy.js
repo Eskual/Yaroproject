@@ -120,12 +120,9 @@ describe('First spec', () => {
     cy.enter('iframe[id="myIframe"]').then(getBody => {
       cy.log('Filling out eighth modal form')
       getBody().find(modalPage.tableAvailableAgents()).should('be.visible')                 
-      getBody().find(modalPage.tableAvailableAgents()).select('user for testing different stuff')
-      cy.wait(5000);                                                                        // Why does value change?
+      getBody().find(modalPage.tableAvailableAgents()).select('user for testing different stuff')                                                                       // Why does value change?
       getBody().find(modalPage.btnMoveItem()).eq(2).click()
-      cy.wait(5000)
-      getBody().find(modalPage.btnNext()).click()  
-      cy.wait(5000)                                       // Filling out eighth modal form
+      getBody().find(modalPage.btnNext()).click()                                           // Filling out eighth modal form
     })
     
     cy.wait(6000);
